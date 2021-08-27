@@ -1,6 +1,8 @@
-class book{
+class book
+{
 
-    public static void main(String args[]) {
+    public static void main(String args[])
+    {
        Literature l = new Literature("Lit","A story of a Tree","ASCA");
        Fiction F= new Fiction("Fic","A story of theory","MASC");
        l.display();
@@ -9,35 +11,44 @@ class book{
     }
 }
 
-class Publisher {
+class Publisher
+ {
     String publisherName;
-    Publisher(String P){
+    Publisher(String P)
+    {
         this.publisherName = P;
     }
-    void display(){
+    void display()
+    {
         System.out.println("Publisher Name : " + this.publisherName);
     }
 }
 
-class Books extends Publisher{  
+class Books extends Publisher
+{  
     String bookName;
-    Books(String B,String P){
+    Books(String B,String P)
+    {
         super(P);
         this.bookName =B;
     }
-    void display(){
+    void display()
+    {
         super.display();
         System.out.println("Bookname Name : " + this.bookName);
     }
 }
 
-class Literature extends Books{  
+class Literature extends Books
+{  
     String LiteratureName;
-    Literature(String L,String B,String P){
+    Literature(String L,String B,String P) 
+    {
         super(B,P);
         this.LiteratureName = L;
     }
-    void display(){
+    void display()
+    {
         System.out.println("..........................................");
         super.display();
         System.out.println("Literature Name : " + this.LiteratureName);
@@ -46,13 +57,16 @@ class Literature extends Books{
  
 }
 
-class Fiction extends Books{  
+class Fiction extends Books 
+{  
     String FictionName;
-    Fiction(String F,String B,String P){
+    Fiction(String F,String B,String P) 
+    {
         super(B,P);
         this.FictionName = F;
     }
-   void display(){
+   void display() 
+    {
         System.out.println("..........................................");
         super.display();
         System.out.println("Fiction Name : " + this.FictionName);
