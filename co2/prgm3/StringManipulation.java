@@ -1,3 +1,7 @@
+//3. Perform string manipulations
+
+
+
 import java.util.*;
 class StringManipulation
 {
