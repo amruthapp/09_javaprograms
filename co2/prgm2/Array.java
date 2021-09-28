@@ -1,3 +1,7 @@
+//2. Search an element in an array.
+
+
+
 import java.util.*;
  
 class Array
